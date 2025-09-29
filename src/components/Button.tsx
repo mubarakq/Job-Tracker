@@ -1,6 +1,6 @@
-import React from 'react'
-interface ButtonProps{
-    onClick: ()=>void;
+// import React from 'react'
+type ButtonProps = {
+    onClick?: ()=>void;
     type?: "button" | "submit";
     disable: boolean;
     className?: string;

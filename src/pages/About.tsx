@@ -1,7 +1,12 @@
+import Nav from "../components/Nav"
 
-
-export const About = () => {
+const About = () => {
   return (
+    <>
+    <Nav/>
     <div>About</div>
+    </>
   )
 }
+
+export default About
