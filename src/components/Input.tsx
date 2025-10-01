@@ -1,12 +1,7 @@
-type inputProps = {
-    type: string;
-    name: string;
-    placeHolder: string;
-    onChange: ()=>void;
-    required?: boolean;
-    className?: string;
-}
-const Input = ({
+
+import type { inputProps, TextProp } from "../utils/types"
+
+export const Input = ({
     type="",
     name="",
     placeHolder="",
@@ -21,4 +16,19 @@ const Input = ({
   )
 }
 
-export default Input
+
+
+export const Textarea = ({
+    name="",
+    placeHolder="",
+    onChange,
+    className="",
+}:TextProp
+) => {
+  return (
+    <>
+    <textarea name={name} placeholder={placeHolder} className={className} onChange={onChange} maxLength={250}></textarea>
+    </>
+  )
+}
+

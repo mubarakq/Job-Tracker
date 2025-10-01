@@ -1,20 +1,14 @@
 // import React from 'react'
-type ButtonProps = {
-    onClick?: ()=>void;
-    type?: "button" | "submit";
-    disable: boolean;
-    className?: string;
-    children?: React.ReactNode;
-}
-const Button = ({
+import type { ButtonProps } from "../utils/types"
+const Button:React.FC<ButtonProps> = ({
   onClick, 
   type="button", 
-  disable = false, 
+  disabled = false, 
   className= "",
   children
 }:ButtonProps) => {
   return (
-    <button type={type} onClick={onClick} className={className} disabled={disable}>
+    <button type={type} onClick={onClick} className={className} disabled={disabled}>
       {children}
     </button>
   )

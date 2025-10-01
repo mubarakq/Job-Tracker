@@ -1,10 +1,5 @@
+import type { cardProps } from "../utils/types"
 
-interface cardProps {
-    companyName: string;
-    role: string;
-    date: string;
-    status: string;
-}
 const Card =({ companyName, role, status, date }: cardProps)=>{
     
     return(
@@ -21,4 +16,5 @@ const Card =({ companyName, role, status, date }: cardProps)=>{
         </>
     )
 }
+
 export default Card
