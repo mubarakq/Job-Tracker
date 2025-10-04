@@ -11,7 +11,7 @@ export type ButtonProps = {
 export type inputProps = {
     type: string;
     name: string;
-    placeHolder: string;
+    placeHolder?: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>)=>void;
     required?: boolean;
     className?: string;
@@ -25,4 +25,26 @@ export type cardProps = {
     date: string;
     status: string;
 }
+
+export type Option = {
+    label:string; 
+    value:string
+}
+
+export type SelectProps = {
+    name: string;
+    onChange: (event: React.ChangeEvent<HTMLSelectElement>)=>void;
+    options: Option[];
+    required?: boolean;
+    className?: string;
+}
+
+
+export type CustomInputProps = {
+  value?: string;   
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>)=>void;
+  onClick?: () => void;
+  placeholder?: string;
+  classname?: string;
+};
 

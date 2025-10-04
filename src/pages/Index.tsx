@@ -32,8 +32,8 @@ function Index() {
     </Button>
   </div>
 </div>
- <div className="w-1/2 h-full md:flex items-center justify-center py-5 px-11 hidden">
-                <img src={Frame} alt="" className="w-90 drop-shadow-xl z-10"/>
+  <div className="w-1/2 h-full md:flex items-center justify-center py-5 px-11 hidden">
+  <img src={Frame} alt="" className="w-90 drop-shadow-xl z-10"/>
   </div>
             <div className="w-[300px] h-[300px] rounded-[100%] ring-indigo-600/25 ring-40 fixed -top-16 -right-16 hidden md:block"></div>
             <div className="w-[300px] h-[300px] rounded-[100%] ring-indigo-600/25 ring-40 fixed -bottom-30 -left-20 hidden md:block"></div>
