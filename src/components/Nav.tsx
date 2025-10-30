@@ -3,8 +3,9 @@ import { useNavigate, Link } from "react-router-dom"
 import Logo from "./Logo"
 import Navlinks from "./Navlinks"
 import { Menu, X } from "lucide-react"
+import type { navProps } from "../utils/types"
 
-const Nav = () => {
+const Nav = ({className}:navProps) => {
   const [isClicked, setIsClicked] = useState(false)
   const navigate = useNavigate()
   
@@ -13,7 +14,7 @@ const Nav = () => {
     setIsClicked((prev )=> !prev)
   }
   return (
-    <nav className="w-full bg-indigo-700 px-11 py-5 flex items-center justify-between z-20 fixed top-0">
+    <nav className={className}>
         <Logo onClick={()=>{navigate('/')}} className="text-2xl text-gray-50 font-bold cursor-pointer">
           JOB Tracker.
         </Logo>

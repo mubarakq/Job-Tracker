@@ -7,8 +7,11 @@ function Index() {
   const navigate = useNavigate()
   return (
     <>
-      <Nav/>
-        <section className={`w-full h-dvh bg-indigo-100/0 flex items-center -z-10`}>
+      <div className="w-full bg-indigo-700 py-5 flex items-center justify-center z-20 fixed top-0">
+        <Nav className="w-full max-w-7xl bg-indigo-700 px-11 flex items-center justify-between"/>
+      </div>
+      <div className="w-full flex justify-center">
+          <section className={`w-full max-w-7xl h-dvh bg-indigo-100/0 flex items-center z-10`}>
             <div
   className="
     w-full h-full flex flex-col justify-center items-center md:items-start px-11 py-5
@@ -38,6 +41,7 @@ function Index() {
             <div className="w-[300px] h-[300px] rounded-[100%] ring-indigo-600/25 ring-40 fixed -top-16 -right-16 hidden md:block"></div>
             <div className="w-[300px] h-[300px] rounded-[100%] ring-indigo-600/25 ring-40 fixed -bottom-30 -left-20 hidden md:block"></div>
         </section>
+        </div>
     </>
   )
 }

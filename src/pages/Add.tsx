@@ -9,7 +9,10 @@ import { DateInput } from "../components/Input"
 const Add = () => {
   return (
     <>
-      <Nav></Nav>
+      <div className="w-full bg-indigo-700 py-5 flex items-center justify-center z-20 fixed top-0">
+        <Nav className="w-full max-w-7xl bg-indigo-700 px-11 flex items-center justify-between"/>
+      </div>
+      <div className="w-full flex justify-center">
       <section className="w-full h-dvh flex items-center justify-center p-2.5 md:pt-30">
           <form action="" className="w-lg p-5 bg-indigo-200 rounded-2xl flex flex-col gap-2.5" >
             <h2 className="text-2xl text-center font-bold text-indigo-800">Add A Job To Start Tracking</h2>
@@ -24,8 +27,11 @@ const Add = () => {
                     required={true}
                     options={[
                         {label: "Applied", value:"applied"},
-                        {label: "Interview", value:"interview"},
-                        {label: "Offered", value:"offered"},
+                        {label: "Interview Fixed", value:"interview fixed"},
+                        {label: "Interviewed", value:"interviewed"},
+                        {label: "Offered", value:"offered accepted"},
+                        {label: "In Progress", value:"in Progress"},
+                        {label: "Offer Received", value:"offer Received"},
                         {label: "Reject", value:"reject"},
                     ]}
             />
@@ -37,6 +43,7 @@ const Add = () => {
           <div className="w-[300px] h-[300px] rounded-[100%] ring-indigo-600/25 ring-40 fixed -top-16 -right-16 hidden md:block"></div>
             <div className="w-[300px] h-[300px] rounded-[100%] ring-indigo-600/25 ring-40 fixed -bottom-30 -left-20 hidden md:block"></div>
       </section>
+      </div>
     </>
   )
 }

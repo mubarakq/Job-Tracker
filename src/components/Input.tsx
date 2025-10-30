@@ -39,21 +39,36 @@ export const Textarea = ({
 
 
 export const Select = ({
-    name="",
-    onChange,
-    options,
-    required=false,
-    className=""
-} : SelectProps) => {
+  name = "",
+  onChange,
+  options,
+  required = false,
+  className = "",
+}: SelectProps) => {
   return (
-    <>
-      <select name={name} required={required} className={className} onChange={onChange}> 
-        <option value="" className="bg-indigo-300 hover:bg-indigo-600 text-gray-50 rounded-md" disabled selected>Select Status</option>{/* default selection*/}
-        {options.map((opt, Index) =>(<option key={Index} className="bg-indigo-300 hover:bg-indigo-600 text-gray-50 rounded-md outline-none" value={opt.value}>{opt.label}</option>))}
-      </select>
-    </>
-  )
-}
+    <select
+      name={name}
+      required={required}
+      className={className}
+      onChange={onChange}
+      defaultValue=""
+    >
+      <option value="" disabled>
+        Select Status
+      </option>
+      {options.map((opt, index) => (
+        <option
+          key={index}
+          value={opt.value}
+          className="bg-indigo-300 hover:bg-indigo-600 text-gray-50 rounded-md outline-none"
+        >
+          {opt.label}
+        </option>
+      ))}
+    </select>
+  );
+};
+
 
 
 // ✅ Typed custom input component

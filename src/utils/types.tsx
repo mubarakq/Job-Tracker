@@ -24,6 +24,7 @@ export type cardProps = {
     role: string;
     date: string;
     status: string;
+    description: string;
 }
 
 export type Option = {
@@ -47,4 +48,6 @@ export type CustomInputProps = {
   placeholder?: string;
   classname?: string;
 };
-
+export type navProps ={
+    className: string;
+}
