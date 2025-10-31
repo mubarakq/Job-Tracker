@@ -13,7 +13,7 @@ const Add = () => {
         <Nav className="w-full max-w-7xl bg-indigo-700 px-11 flex items-center justify-between"/>
       </div>
       <div className="w-full flex justify-center">
-      <section className="w-full h-dvh flex items-center justify-center p-2.5 md:pt-30">
+      <section className="w-full h-dvh flex items-center justify-center p-2.5 px-11 md:pt-30">
           <form action="" className="w-lg p-5 bg-indigo-200 rounded-2xl flex flex-col gap-2.5" >
             <h2 className="text-2xl text-center font-bold text-indigo-800">Add A Job To Start Tracking</h2>
             <Input type="text" name="" placeHolder="Company's Name" onChange={()=>{}} className="focus:bg-indigo-300  outline-none w-full p-2.5 ring-1 ring-indigo-400 rounded-md" required={true} />
