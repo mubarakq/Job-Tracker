@@ -1,12 +1,8 @@
 import { useState, useEffect, useRef } from "react";
+import type {cardMenuProps} from "../utils/types";
 
-interface CardMenuProps {
-  onEdit?: () => void;
-  onDelete?: () => void;
-  onPin?: () => void;
-}
 
-const CardMenu = ({ onEdit, onDelete, onPin }: CardMenuProps) => {
+const CardMenu = ({ onEdit, onDelete, onPin }: cardMenuProps) => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 

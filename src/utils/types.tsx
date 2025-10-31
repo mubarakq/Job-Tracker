@@ -51,3 +51,9 @@ export type CustomInputProps = {
 export type navProps ={
     className: string;
 }
+
+export type cardMenuProps = {
+  onEdit?: () => void;
+  onDelete?: () => void;
+  onPin?: () => void;
+}
