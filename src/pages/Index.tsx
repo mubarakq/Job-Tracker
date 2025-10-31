@@ -17,7 +17,7 @@ function Index() {
     w-full h-full flex flex-col justify-center items-center md:items-start px-11 py-5
     bg-cover bg-center bg-no-repeat
     md:bg-none
-    bg-[linear-gradient(rgba(79,70,229,0.3),rgba(79,70,229,0.3)),url('/src/assets/Woman.png')]
+    bg-[linear-gradient(rgba(79,70,229,0.3),rgba(79,70,229,0.3)),url('/src/assets/Woman.webp')]
   "
 >
   <h2 className="text-2xl md:text-4xl md:text-indigo-600 text-indigo-100 font-bold text-center md:text-left">FROM APPLICATION</h2>
