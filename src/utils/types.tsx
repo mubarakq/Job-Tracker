@@ -57,3 +57,7 @@ export type cardMenuProps = {
   onDelete?: () => void;
   onPin?: () => void;
 }
+export type linkContain = {
+    className?: string;
+    children?: React.ReactNode;
+}

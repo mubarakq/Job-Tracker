@@ -1,8 +1,4 @@
-
-interface linkContain{
-    className?: string;
-    children?: React.ReactNode;
-}
+import type { linkContain } from "../utils/types"
 
 const Navlinks = ({className="", children}:linkContain) => {
   return (
