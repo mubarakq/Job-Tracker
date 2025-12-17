@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import type {cardMenuProps} from "../utils/types";
+import type {cardMenuProps} from "../types/types";
 
 
 const CardMenu = ({ onEdit, onDelete, onPin }: cardMenuProps) => {

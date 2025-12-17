@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom"
 import Logo from "./Logo"
 import Navlinks from "./Navlinks"
 import { Menu, X } from "lucide-react"
-import type { navProps } from "../utils/types"
+import type { navProps } from "../types/types"
 
 const Nav = ({className}:navProps) => {
   const [isClicked, setIsClicked] = useState(false)

@@ -1,4 +1,4 @@
-import type { cardProps } from "../utils/types";
+import type { cardProps } from "../types/types";
 import CardMenu from "./CardMenu";
 
 const Card = ({ companyName, role, status, date, description }: cardProps) => {

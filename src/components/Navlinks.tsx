@@ -1,4 +1,4 @@
-import type { linkContain } from "../utils/types"
+import type { linkContain } from "../types/types"
 
 const Navlinks = ({className="", children}:linkContain) => {
   return (

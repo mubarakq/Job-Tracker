@@ -1,5 +1,5 @@
 
-import type { inputProps, SelectProps, TextProp, CustomInputProps } from "../utils/types"
+import type { inputProps, SelectProps, TextProp, CustomInputProps } from "../types/types"
 // Date Utils
 import { useState, forwardRef } from "react";
 import DatePicker from "react-datepicker";
