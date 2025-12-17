@@ -3,7 +3,7 @@ import CardMenu from "./CardMenu";
 
 const Card = ({ companyName, role, status, date, description }: cardProps) => {
   return (
-    <article className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg hover:scale-[1.] transition-transform transition-shadow duration-300">
+    <article className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg hover:scale-[1.]  transition-shadow duration-300">
       {/* Header */}
       <div className="bg-indigo-700 text-white text-md font-semibold p-3 flex justify-between items-center">
         <span>{companyName}</span>

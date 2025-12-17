@@ -23,8 +23,11 @@ const Nav = ({className}:navProps) => {
           <Link className="font-family:Inter text-md hover:cursor-pointer text-gray-50 " to="/Add">ADD JOB</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/Job">VIEW JOBS</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/About">ABOUT</Link>
-          <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/Login">LOGIN</Link>
         </Navlinks>
+        <div className=" md:flex gap-1.5 hidden">
+            <Link className=" font-family:Inter text-lg px-2.5 py-1 hover:cursor-pointer bg-gray-50  text-indigo-600 rounded-md " to="/Login">LOGIN</Link> 
+            <Link className=" font-family:Inter text-lg px-2.5 py-1 hover:cursor-pointer text-gray-50  bg-indigo-500 rounded-md" to="/Signup">SIGN UP</Link>
+          </div>
         {/* for mobile */}
 
         {isClicked && (
@@ -40,7 +43,8 @@ const Nav = ({className}:navProps) => {
           <Link className="font-family:Inter text-md hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/Add">ADD JOB</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/Job">VIEW JOBS</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/About">ABOUT</Link>
-          <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/Login">Login</Link>
+          <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/Login">LOGIN</Link>
+          <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/Signup">SIGN UP</Link>
         </Navlinks>
         <Menu size={20} className="text-gray-50 md:hidden" onClick={()=>{handleClicked()}}/>
     </nav>
