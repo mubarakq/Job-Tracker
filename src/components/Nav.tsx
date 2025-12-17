@@ -23,7 +23,7 @@ const Nav = ({className}:navProps) => {
           <Link className="font-family:Inter text-md hover:cursor-pointer text-gray-50 " to="/Add">ADD JOB</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/Job">VIEW JOBS</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/About">ABOUT</Link>
-          <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/Login">Login</Link>
+          <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/Login">LOGIN</Link>
         </Navlinks>
         {/* for mobile */}
 
