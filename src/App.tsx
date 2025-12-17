@@ -5,7 +5,7 @@ import Index from './pages/Index';
 import About from './pages/About';
 import Job from './pages/Job';
 import Add from './pages/Add';
-import Login from './pages/login'
+import Login from './pages/Login'
 
 function App() {
   return (
