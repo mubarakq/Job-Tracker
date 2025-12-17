@@ -5,6 +5,7 @@ import Index from './pages/Index';
 import About from './pages/About';
 import Job from './pages/Job';
 import Add from './pages/Add';
+import Login from './pages/login'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/About' element={<About/>}/>
         <Route path='/Job' element={<Job/>}/>
         <Route path='/Add' element={<Add/>}/>
+        <Route path='/Login' element={<Login/>}/>
       </Routes>
     </BrowserRouter>
   )

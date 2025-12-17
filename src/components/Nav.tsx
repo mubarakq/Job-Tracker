@@ -23,6 +23,7 @@ const Nav = ({className}:navProps) => {
           <Link className="font-family:Inter text-md hover:cursor-pointer text-gray-50 " to="/Add">ADD JOB</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/Job">VIEW JOBS</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/About">ABOUT</Link>
+          <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50" to="/Login">Login</Link>
         </Navlinks>
         {/* for mobile */}
 
@@ -39,6 +40,7 @@ const Nav = ({className}:navProps) => {
           <Link className="font-family:Inter text-md hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/Add">ADD JOB</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/Job">VIEW JOBS</Link>
           <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/About">ABOUT</Link>
+          <Link className="font-family:Inter text-lg hover:cursor-pointer text-gray-50 block w-full p-5 hover:bg-indigo-600" to="/Login">Login</Link>
         </Navlinks>
         <Menu size={20} className="text-gray-50 md:hidden" onClick={()=>{handleClicked()}}/>
     </nav>
