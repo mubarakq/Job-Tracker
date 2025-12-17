@@ -27,7 +27,7 @@ function Index() {
     Say goodbye to messy spreadsheets and hello to career clarity.
   </p>
   <div className="flex gap-2.5 mt-2.5">
-    <Button className="py-1.5 px-2 md:px-3 text-gray-50 text-md font-bold bg-indigo-600 hover:bg-indigo-800 rounded-full transition duration-150 ease-in hover:cursor-pointer" type="button" onClick={()=>{ navigate('/Add')}} disabled={false}>
+    <Button className="py-1.5 px-2 md:px-3 text-gray-50 text-md font-bold bg-indigo-600 hover:bg-indigo-800 rounded-full transition duration-150 ease-in hover:cursor-pointer z-10" type="button" onClick={()=>{ navigate('/Add')}} disabled={false}>
       Start Tracking
     </Button>
     <Button className="py-1.5 px-3 text-md font-bold bg-gray-100/80 text-indigo-600 md:border-2 hover:bg-gray-100 hover:text-indigo-700 md:border-indigo-600 md:text-indigo-600 rounded-full md:hover:bg-indigo-600 md:hover:text-gray-50 transition duration-150 ease-in hover:cursor-pointer" type="button" onClick={()=>{ navigate('/Job')}} disabled={false}>
